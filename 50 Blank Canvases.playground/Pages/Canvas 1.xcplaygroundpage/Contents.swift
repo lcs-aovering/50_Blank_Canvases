@@ -13,8 +13,15 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
-
+let canvas = Canvas(width: 2000, height: 800)
+for x in stride(from: 0, through: 2000, by: 100){
+    if x % 200==0{
+        canvas.fillColor = Color.init(hue: x/8, saturation: 100, brightness: 100, alpha: 100)
+        }
+            else {canvas.fillColor = Color.black
+        }
+    canvas.drawEllipse(centreX: x, centreY: 400, width: 1000, height: 1000)
+}
 /*:
  ## Add your code below
  
