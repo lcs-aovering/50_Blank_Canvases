@@ -22,6 +22,7 @@ for x in stride(from: 0, through: 2000, by: 100){
         }
     canvas.drawEllipse(centreX: x, centreY: 400, width: 1000, height: 1000)
 }
+canvas.copyToClipboard()
 /*:
  ## Add your code below
  
